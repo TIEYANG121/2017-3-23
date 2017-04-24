@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input class="text1" type="text">
+	<input class="sign" type="text">
+	<input class="text2" type="text">
+	<button class="btn">获取值</button>
+
+	<script>
+		
+		var txt1 = document.querySelector('.text1');
+		var txt2 = document.querySelector('.text2');
+		var sign = document.querySelector('.sign');
+		var btn = document.querySelector('.btn');
+		
+
+		btn.onclick = function(){
+			// var result = txt1.value + txt2.value;
+			// alert(result);
+			
+			// var result = number1 + number2;
+			// alert(result);
+			var number1 = Number(txt1.value);
+			var number2 = Number(txt2.value);
+			if(sign.value == "+"){
+				alert(number1 + number2)
+			}
+			if(sign.value == "-"){
+				alert(number1 - number2)
+			}
+		}
+
+	</script>
+</body>
+</html>
